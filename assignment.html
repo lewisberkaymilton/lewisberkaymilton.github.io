@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments - Berkay Gündoğdu - 20213152</title>
+    <title>All Assignments - Berkay Gündoğdu</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,8 +42,9 @@
         }
         h3 {
             color: #2c3e50;
-            margin-top: 20px;
+            margin-top: 25px;
             margin-bottom: 10px;
+            font-size: 1.2em;
         }
         ul {
             list-style-type: disc;
@@ -56,7 +57,18 @@
             padding: 15px;
             border-radius: 5px;
             overflow-x: auto;
-            font-family: Consolas, monospace;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        code {
+            font-family: Consolas, 'Courier New', monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
         }
         /* Geri Dön Butonu Stili */
         .back-btn-container {
@@ -82,12 +94,12 @@
 <body>
 
     <header>
-        <h1>All Assignments</h1>
-        <p>Berkay Gündoğdu 20213152</p>
+        <h1>Assignments</h1>
+        <p>Berkay Gündoğdu-20213152</p>
     </header>
 
     <section>
-        <h2>HW-2 Q3 WebProfessionals.org Questions</h2>
+        <h2>HW 2 - Q3 WebProfessionals.org Questions</h2>
         
         <h3>a) How can you join WebProfessionals.org? What does it cost to join?</h3>
         <p>Membership is open to anyone with an interest in enhancing their career development. To join, you simply need to go to their "Join" page and complete the information requested by clicking the "join now" button.</p>
@@ -115,38 +127,62 @@
     </section>
 
     <section>
-        <h2>HW3 Q1 and Q2 Trillium Media Design Code Fixes</h2>
-        <p>Here is the corrected HTML and CSS code for the Trillium Media Design page, ensuring proper tag closures and sufficient background-to-text contrast.</p>
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Trillium Media Design Q1</title>
-    <meta charset="utf-8">
-    <style>
-        body { 
-            background-color: #0066CC;
-            color: #FFFFFF; /* Kontrast için beyaz renk eklendi */
-        }
-        header { 
-            font-family: Arial; /* Yazı tipi Arial olarak belirlendi */
-        }
-    </style> </head> <body>
-    <header><h1>Trillium Media Design</h1></header>
-    <p>Our professional staff takes pride in its working relationship with our clients by offering personalized services
-    that listen to their needs, develop their target areas, and incorporate these items into a website that works.</p>
-</body>
-</html>
-        <style>
-        body { 
-            background-color: #000066;
-            color: #CCCCCC;
-            font-family: Arial,sans-serif;
-            font-size: 1.2em; 
-        }
-    </style> ```
+        <h2>HW3 Q1 and Q2 HTML & CSS Code Fixes</h2>
+        
+        <h3>1. Missing Code Completion</h3>
+        <p><strong>Task:</strong> Fill in the missing code so that the background and text colors have good contrast, and the header area uses Arial.</p>
+        <p><strong>Solution:</strong> Since the background color is a dark blue (<code>#0066CC</code>), the text color is set to white (<code>#FFFFFF</code>) for optimal contrast. The header font is set to Arial. Also, the missing closing tags for <code>&lt;/style&gt;</code> and <code>&lt;/head&gt;</code> are added.</p>
+        
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;Trillium Media Design&lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;style&gt;
+body { 
+    background-color: #0066CC;
+    color: #FFFFFF; /* High contrast text color */
+}
+header { 
+    font-family: Arial, sans-serif; /* Arial font for header */
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;&lt;h1&gt;Trillium Media Design&lt;/h1&gt;&lt;/header&gt;
+&lt;p&gt;Our professional staff takes pride in its working relationship with our clients by offering personalized services
+that listen to their needs, develop their target areas, and incorporate these items into a website that works.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
+        <h3>2. Find the Error</h3>
+        <p><strong>Task:</strong> Why won’t the page corresponding to the provided code display properly in a browser?</p>
+        <p><strong>Solution:</strong> The error is located at the end of the CSS block. The <code>&lt;style&gt;</code> tag is mistakenly opened again instead of being closed. It should be written as <code>&lt;/style&gt;</code> with a forward slash. Without the slash, the browser cannot determine where the CSS ends and the HTML begins, which breaks the page layout.</p>
+        
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;Trillium Media Design&lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;style&gt;
+body { 
+    background-color: #000066;
+    color: #CCCCCC;
+    font-family: Arial,sans-serif;
+    font-size: 1.2em; 
+}
+&lt;/style&gt; &lt;!-- The error was here, forward slash added --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;&lt;h1&gt;Trillium Media Design&lt;/h1&gt;&lt;/header&gt;
+&lt;main&gt;
+    &lt;p&gt;Our professional staff takes pride in its working relationship with our clients by offering personalized
+    services that listen to their needs, develop their target areas, and incorporate these items into a website that
+    works.&lt;/p&gt;
+&lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
-       
     </section>
 
     <div class="back-btn-container">
