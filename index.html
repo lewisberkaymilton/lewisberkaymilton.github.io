@@ -56,6 +56,24 @@
             list-style-type: square;
             padding-left: 20px;
         }
+        /* Homework listesi için daha şık bir görünüm */
+        .hw-list {
+            list-style-type: none; /* Kareleri kaldırıp daha temiz bir liste yaptık */
+            padding-left: 0;
+        }
+        .hw-list li {
+            margin-bottom: 10px;
+        }
+        .hw-list a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .hw-list a:hover {
+            text-decoration: underline;
+            color: #1c5980;
+        }
         footer {
             text-align: center;
             margin-top: 30px;
@@ -78,9 +96,12 @@
     </section>
 
     <section>
-        <h2>Assignments</h2>
-        <p>You can review my web design coursework by clicking the link below:</p>
-        <a href="assignment.html" target="_blank">View Assignments</a>
+        <h2>Homeworks</h2>
+        <ul class="hw-list">
+            
+            <li><a href="hw2.pdf" target="_blank">📄 HW 2</a></li>
+            <li><a href="hw3.pdf" target="_blank">📄 HW 3</a></li>
+        </ul>
     </section>
 
     <section>
