@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .site-container {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+        }
+        .site-container.unappealing {
+            border-left-color: #e74c3c;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #2980b9;
+        }
+        .unappealing strong {
+            color: #c0392b;
+        }
+        ul {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Web Design Analysis</h1>
+
+    <div class="site-container">
+        <h2>1. Appealing Website Example</h2>
+        <p><strong>a. URL of the website:</strong> <a href="https://www.firewatchgame.com/" target="_blank">https://www.firewatchgame.com/</a></p>
+        
+        <p><strong>b. Does this page use tables?</strong> No, it does not use tables. The layout relies on modern semantic HTML tags (like sections and divs) rather than outdated table structures.</p>
+        
+        <p><strong>c. Does this page use CSS?</strong> Yes, it makes excellent use of CSS. It uses CSS for a beautiful "parallax scrolling" effect, custom typography, spacing, and making the site fully responsive for mobile devices.</p>
+        
+        <p><strong>d. Is this page appealing or unappealing?</strong> This page is highly appealing. Three reasons for this are:
+            <ul>
+                <li><strong>Immersive Depth:</strong> The CSS parallax scrolling creates a 3D illusion that draws the user into the webpage.</li>
+                <li><strong>Excellent Color Palette:</strong> The warm, sunset-themed colors are visually striking and perfectly reflect the product's mood.</li>
+                <li><strong>Minimalist Interface:</strong> The content is not crowded; call-to-action buttons are clear and easy to find without distracting text.</li>
+            </ul>
+        </p>
+        
+        <p><strong>e. Improvement:</strong> N/A (The page functions perfectly as a modern, artistic landing page).</p>
+    </div>
+
+    <div class="site-container unappealing">
+        <h2>2. Unappealing Website Example</h2>
+        <p><strong>a. URL of the website:</strong> <a href="http://www.pnwx.com/" target="_blank">http://www.pnwx.com/</a> (Pacific Northwest X-Ray Inc.)</p>
+        
+        <p><strong>b. Does this page use tables?</strong> Yes, the entire structural layout of the page is built using rigid HTML tables. This is an obsolete practice that breaks the layout on smaller screens.</p>
+        
+        <p><strong>c. Does this page use CSS?</strong> No, it barely uses any external CSS. The design relies heavily on outdated inline HTML attributes (like <i>bgcolor</i> and <i>font</i> tags) which makes the code repetitive and messy.</p>
+        
+        <p><strong>d. Is this page appealing or unappealing?</strong> This page is highly unappealing. Three reasons for this are:
+            <ul>
+                <li><strong>Terrible Color Contrast:</strong> The neon green and harsh blue text on dark backgrounds cause immediate eye strain.</li>
+                <li><strong>Information Overload:</strong> The homepage is a massive, unorganized wall of text and links with no clear hierarchy.</li>
+                <li><strong>Lack of Responsiveness:</strong> Because of the fixed table layout, users on mobile phones have to scroll horizontally to read anything, ruining the user experience.</li>
+            </ul>
+        </p>
+        
+        <p><strong>e. What would you do to improve it?</strong> 
+        To improve this site, I would completely remove the table-based layout and replace it with a modern CSS Flexbox or Grid system. Secondly, I would change the color scheme to a clean, professional white background with dark gray text to ensure readability. Finally, instead of putting all links on the homepage, I would organize them into a clean dropdown navigation menu at the top.</p>
+    </div>
+
+</body>
+</html>
