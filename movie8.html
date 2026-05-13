@@ -5,87 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details - Saving Private Ryan</title>
     <style>
-        /* CSS for Table Border and Background Colors as requested */
+        /* CSS for Background and Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Filmin atmosferine uygun bir arka plan görseli */
+            background-image: url('https://images.alphacoders.com/270/270180.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
+            margin: 0;
+            color: #333;
         }
+
+        /* Sayfanın okunabilirliği için içeriği saran şeffaf kutu */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d3748;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
         table {
             border-collapse: collapse;
-            width: 80%;
-            max-width: 800px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #fff;
         }
+
         th, td {
-            border: 2px solid #4a5568; /* Table border style */
+            border: 2px solid #4a5568;
             padding: 15px;
             text-align: left;
         }
+
         th {
-            background-color: #2d3748; /* Table header background color */
+            background-color: #2d3748;
             color: white;
             text-align: center;
+            font-size: 1.2em;
         }
+
         tr:nth-child(even) {
-            background-color: #edf2f7; /* Alternating row background color */
+            background-color: #f7fafc;
         }
+
+        strong {
+            color: #2c5282;
+        }
+
         .description {
             font-style: italic;
+            line-height: 1.5;
         }
+
         .footer-link {
             margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .footer-link a {
+            color: #2b6cb0;
+            text-decoration: none;
+            border-bottom: 1px solid #2b6cb0;
+        }
+
+        .footer-link a:hover {
+            color: #2c5282;
         }
     </style>
 </head>
 <body>
 
-    <h1>Favorite Movie Details</h1>
+    <div class="container">
+        <h1>Favorite Movie Details</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">Saving Private Ryan</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Title of the movie</strong></td>
-                <td>Saving Private Ryan</td>
-            </tr>
-            <tr>
-                <td><strong>Director</strong></td>
-                <td>Steven Spielberg</td>
-            </tr>
-            <tr>
-                <td><strong>Leading actor</strong></td>
-                <td>Tom Hanks</td>
-            </tr>
-            <tr>
-                <td><strong>Leading actress</strong></td>
-                <td>No leading actress (Male-led ensemble cast)</td>
-            </tr>
-            <tr>
-                <td><strong>Rating</strong></td>
-                <td>R</td>
-            </tr>
-            <tr>
-                <td><strong>Brief Description</strong></td>
-                <td class="description">Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to rescue a paratrooper whose brothers have been killed in action.</td>
-            </tr>
-            <tr>
-                <td><strong>Movie Review</strong></td>
-                <td><a href="https://www.imdb.com/title/tt0120815/reviews" target="_blank">Read Professional Reviews</a></td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Saving Private Ryan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Title of the movie</strong></td>
+                    <td>Saving Private Ryan</td>
+                </tr>
+                <tr>
+                    <td><strong>Director</strong></td>
+                    <td>Steven Spielberg</td>
+                </tr>
+                <tr>
+                    <td><strong>Leading actor</strong></td>
+                    <td>Tom Hanks</td>
+                </tr>
+                <tr>
+                    <td><strong>Leading actress</strong></td>
+                    <td>No leading actress (Male-led ensemble cast)</td>
+                </tr>
+                <tr>
+                    <td><strong>Rating</strong></td>
+                    <td>R (Restricted)</td>
+                </tr>
+                <tr>
+                    <td><strong>Brief Description</strong></td>
+                    <td class="description">Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to rescue a paratrooper whose brothers have been killed in action.</td>
+                </tr>
+                <tr>
+                    <td><strong>Movie Review</strong></td>
+                    <td><a href="https://www.imdb.com/title/tt0120815/reviews" target="_blank">Read Professional Reviews on IMDb</a></td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="footer-link">
-        <p>Questions? <a href="mailto:berkaygundogdu@example.com">Contact me via E-mail</a></p>
+        <div class="footer-link">
+            <p>Questions? <a href="mailto:berkaygundogdu666@gmail.com">Contact me via E-mail</a></p>
+        </div>
     </div>
 
 </body>
