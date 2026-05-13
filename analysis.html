@@ -32,11 +32,21 @@
         .site-container.unappealing {
             border-left-color: #e74c3c;
         }
+        .evidence-container {
+            background-color: #2d3748;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
         h2 {
             color: #2c3e50;
             margin-top: 0;
         }
-        p {
+        .evidence-container h2 {
+            color: #fff;
             margin-bottom: 15px;
         }
         strong {
@@ -45,8 +55,26 @@
         .unappealing strong {
             color: #c0392b;
         }
-        ul {
-            margin-top: 5px;
+        .pdf-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .pdf-link:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .pdf-link.bad-site {
+            background-color: #e74c3c;
+        }
+        .pdf-link.bad-site:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
@@ -57,40 +85,27 @@
     <div class="site-container">
         <h2>1. Appealing Website Example</h2>
         <p><strong>a. URL of the website:</strong> <a href="https://www.apple.com" target="_blank">https://www.apple.com</a></p>
-        
-        <p><strong>b. Does this page use tables?</strong> No, it does not use tables for layout. It uses modern semantic elements and CSS layouts.</p>
-        
-        <p><strong>c. Does this page use CSS?</strong> Yes, Apple uses high-end CSS for typography, responsive design, and smooth layout configurations across all devices.</p>
-        
-        <p><strong>d. Is this page appealing or unappealing?</strong> This page is highly appealing. Three reasons for this are:
-            <ul>
-                <li><strong>Clean Minimalism:</strong> Use of high-contrast white space makes the products stand out.</li>
-                <li><strong>Professional Typography:</strong> The fonts are clear, consistent, and easy to read.</li>
-                <li><strong>Visual Hierarchy:</strong> Important information and beautiful product images are organized perfectly to guide the eye.</li>
-            </ul>
-        </p>
-        
-        <p><strong>e. Improvement:</strong> N/A (The page follows industry-leading design standards).</p>
+        <p><strong>b. Does this page use tables?</strong> No, it utilizes modern semantic HTML and CSS layouts instead of tables.</p>
+        <p><strong>c. Does this page use CSS?</strong> Yes, it uses advanced CSS for responsive grid layouts, typography, and visual consistency.</p>
+        <p><strong>d. Is this page appealing?</strong> Yes. Three reasons: Clean use of white space, high-resolution product imagery, and an intuitive navigation system.</p>
     </div>
 
     <div class="site-container unappealing">
         <h2>2. Unappealing Website Example</h2>
         <p><strong>a. URL of the website:</strong> <a href="http://www.pnwx.com/" target="_blank">http://www.pnwx.com/</a></p>
+        <p><strong>b. Does this page use tables?</strong> Yes, the entire structural layout is built using outdated HTML tables.</p>
+        <p><strong>c. Does this page use CSS?</strong> No, it relies heavily on deprecated inline HTML attributes and font tags for styling.</p>
+        <p><strong>d. Is this page unappealing?</strong> Yes. Three reasons: Harsh color contrast (blue/green on dark), cluttered content delivery, and a total lack of mobile responsiveness.</p>
+        <p><strong>e. Improvement:</strong> I would re-structure the site using a modern CSS Flexbox layout and implement a professional, high-contrast color palette to improve readability.</p>
+    </div>
+
+    <div class="evidence-container">
+        <h2>Instructor Review: PDF Evidence</h2>
+        <p>Please use the links below to view the PDF captures of these websites as proof of analysis:</p>
         
-        <p><strong>b. Does this page use tables?</strong> Yes, the entire structural layout is built using old HTML tables, which is obsolete.</p>
+        <a href="Apple.pdf" class="pdf-link" target="_blank">View Apple.pdf (Appealing)</a>
         
-        <p><strong>c. Does this page use CSS?</strong> No, it relies on outdated inline HTML attributes for styling rather than external CSS files.</p>
-        
-        <p><strong>d. Is this page appealing or unappealing?</strong> This page is highly unappealing. Three reasons for this are:
-            <ul>
-                <li><strong>Poor Color Scheme:</strong> The bright blue and green text on dark backgrounds is hard to read.</li>
-                <li><strong>Cluttered Layout:</strong> Too many links and images are packed together without proper spacing.</li>
-                <li><strong>Outdated Graphics:</strong> The low-resolution icons and old-style buttons make the site look unprofessional.</li>
-            </ul>
-        </p>
-        
-        <p><strong>e. What would you do to improve it?</strong> 
-        I would remove the table layout and use a modern CSS Grid. I'd also simplify the color palette to a professional white background with dark text and organize the many links into a clean navigation menu.</p>
+        <a href="pnwx.pdf" class="pdf-link bad-site" target="_blank">View PNWX.pdf (Unappealing)</a>
     </div>
 
 </body>
