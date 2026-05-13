@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #000;
+        }
+        .survey-container {
+            border: 1px solid #999;
+            padding: 15px 25px;
+            max-width: 500px;
+            background-color: #fff;
+        }
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            font-weight: bold;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        .input-group input[type="text"],
+        .input-group input[type="email"] {
+            width: 180px;
+            padding: 2px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .choice-label {
+            font-weight: normal;
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .question-label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 3px;
+        }
+        select {
+            margin-bottom: 15px;
+            width: 180px;
+        }
+        textarea {
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+            resize: vertical;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 3px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="survey-container">
+        <h1>Music Survey</h1>
+
+        <form action="http://www.uyar.com/teaching/ecc006/2017spring/login.php" method="POST">
+            
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <fieldset>
+                <legend>Select Your Favorite Types of Music:</legend>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="pop"> Pop</label>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="classical"> Classical</label>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="rock"> Rock</label>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="folk"> Folk</label>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="rap"> Rap</label>
+                <label class="choice-label"><input type="checkbox" name="musicType" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select how often you purchase Music CDs:</legend>
+                <label class="choice-label"><input type="radio" name="purchaseFreq" value="weekly"> Weekly</label>
+                <label class="choice-label"><input type="radio" name="purchaseFreq" value="few_yearly" checked> A few CDs each year</label>
+                <label class="choice-label"><input type="radio" name="purchaseFreq" value="monthly"> Monthly</label>
+                <label class="choice-label"><input type="radio" name="purchaseFreq" value="never"> Never purchase</label>
+            </fieldset>
+
+            <label class="question-label" for="locations">Select the locations you listen to Music:</label>
+            <select id="locations" name="locations" size="3">
+                <option value="home" selected>At home</option>
+                <option value="car">In the car</option>
+                <option value="mp3">Anywhere (MP3 Player)</option>
+                <option value="work">At work</option>
+            </select>
+
+            <label class="question-label" for="musicRole">What role does music play in your life?</label>
+            <textarea id="musicRole" name="musicRole" rows="3" cols="60"></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+
+</body>
+</html>
