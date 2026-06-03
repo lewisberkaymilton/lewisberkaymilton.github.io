@@ -3,107 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Survey Results</title>
+    <title>Homework Assignment #10</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            color: #000;
+            line-height: 1.5;
+            font-size: 15px;
         }
         h1 {
-            text-align: center;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
+            font-size: 22px;
+            margin-bottom: 5px;
         }
         h2 {
-            color: #2980b9;
-            margin-top: 30px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-        .results-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .results-list li {
-            background: #f9f9f9;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #e0e0e0;
-        }
-        .results-list strong {
-            color: #2c3e50;
-        }
-        .analysis {
-            background-color: #e8f4f8;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            border: 1px solid #bce8f1;
-        }
-        .analysis p {
+            font-size: 18px;
+            margin-top: 25px;
             margin-bottom: 15px;
-            text-align: justify;
         }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 1.1em;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 20px;
         }
-        .footer a {
-            color: #e74c3c;
-            text-decoration: none;
+        p {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        table {
+            border-collapse: collapse;
+            width: 350px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
             font-weight: bold;
         }
-        .footer a:hover {
-            text-decoration: underline;
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>E-Commerce Popularity Survey</h1>
-        <p><em>A survey conducted among 20 individuals (friends, family, and classmates) to determine the popularity and habits of online shopping.</em></p>
+    <h1>Homework Assignment #10</h1>
+    <div class="subtitle">Total Participants: 20 people (friends, family members, and classmates)</div>
+    
+    <hr>
 
-        <h2>1. Survey Findings</h2>
-        <ul class="results-list">
-            <li><strong>a. Purchased an item online:</strong> 18 people (90%)</li>
-            <li><strong>b. Shopped but not purchased online:</strong> 2 people (10%)</li>
-            <li><strong>c. Purchase frequency:</strong> Once a week (5 people), Once a month (10 people), Once a year (3 people)</li>
-            <li><strong>d. Age range:</strong> 18–25 (14 people), 26–39 (4 people), 40–50 (2 people), Over 50 (0 people)</li>
-            <li><strong>e. Gender:</strong> 12 Male, 8 Female</li>
-            <li><strong>f. Level of education:</strong> High school (2), Some college (14), College graduate (3), Graduate school (1)</li>
-            <li><strong>g. Favorite online shopping site:</strong> Amazon (10), Trendyol (6), AliExpress (2)</li>
-        </ul>
+    <h2>Survey Results</h2>
 
-        <h2>2. Conclusions & Market Research</h2>
-        <div class="analysis">
-            <p>Based on the survey of 20 participants, it is evident that e-commerce is deeply integrated into daily life, particularly among the 18–25 demographic (predominantly "some college" students). A significant 90% of respondents have made online purchases, with a majority shopping on a monthly or weekly basis. Amazon and local giants like Trendyol dominate as the preferred platforms. The minimal percentage (10%) of users who only "window shop" suggests that consumer trust in digital payment systems is currently very high.</p>
-            
-            <p>These local findings are heavily supported by broader industry statistics. According to recent reports by <strong>eMarketer</strong>, global retail e-commerce sales continue to climb, driven by digital-native generations (Gen Z and Millennials) who prioritize convenience. Furthermore, data from the <strong>Pew Research Center</strong> highlights that the vast majority of young adults are online almost constantly, making them the most likely demographic to engage in frequent digital commerce. The shift from physical retail to e-commerce is no longer a trend, but a permanent consumer standard.</p>
-        </div>
+    <span class="question">a. How many have purchased an item online?</span>
+    <p>Answer: 18 out of 20 people have purchased items online.</p>
 
-        <div class="footer">
-            <p>Submitted by: <a href="mailto:berkaygundogdu666@gmail.com">Berkay Gündoğdu</a></p>
-        </div>
-    </div>
+    <span class="question">b. How many have shopped but not purchased online?</span>
+    <p>Answer: 2 out of 20 people have browsed online stores but never completed a purchase.</p>
+
+    <span class="question">c. How many purchase online once a year? Once a month? Once a week?</span>
+    <table>
+        <tr>
+            <th>Frequency</th>
+            <th>Number of People</th>
+        </tr>
+        <tr>
+            <td>Once a week</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Once a month</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Once a year</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Never purchase online</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <span class="question">d. What is their age range?</span>
+    <table>
+        <tr>
+            <th>Age Range</th>
+            <th>Number of People</th>
+        </tr>
+        <tr>
+            <td>18–25</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>26–39</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>40–50</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Over 50</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <span class="question">e. What is their gender?</span>
+    <p>Answer: 12 Male, 8 Female.</p>
+
+    <span class="question">f. What is their level of education?</span>
+    <table>
+        <tr>
+            <th>Education Level</th>
+            <th>Number of People</th>
+        </tr>
+        <tr>
+            <td>High school</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Some college</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>College graduate</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Graduate school</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <span class="question">g. What is their favorite online shopping site?</span>
+    <p>Answer: Amazon (10 people), Trendyol (6 people), AliExpress (2 people), Hepsiburada (2 people).</p>
+
+    <hr>
+
+    <h2>Conclusions and Web Statistics</h2>
+    <p><strong>Conclusion:</strong> Based on my local survey results, e-commerce is highly integrated into the daily lives of the 18–25 demographic (mostly "some college" students). A significant 90% of respondents have made online purchases. These local findings are strongly supported by global statistics. According to recent reports by <strong>eMarketer</strong>, retail e-commerce sales continue to grow rapidly, driven by young adults who prioritize convenience. Furthermore, data from the <strong>Pew Internet and American Life Project</strong> highlights that the vast majority of this age group is online almost constantly, making them the primary drivers of platforms like Amazon and Trendyol. The shift to digital commerce is clearly a permanent standard.</p>
+
+    <br>
+    <p>Submitted by: <a href="mailto:berkaygundogdu666@gmail.com">Berkay Gündoğdu</a></p>
 
 </body>
 </html>
