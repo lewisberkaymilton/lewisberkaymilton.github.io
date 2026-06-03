@@ -3,78 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework Assignment #10</title>
+    <title>E-Commerce Survey Analysis</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            margin: 40px;
-            color: #000;
-            line-height: 1.5;
+            margin: 40px auto;
+            max-width: 900px; /* Sayfanın çok fazla sağa sola yayılmasını engeller, okumayı kolaylaştırır */
+            color: #111;
+            line-height: 1.6;
             font-size: 15px;
         }
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 5px;
         }
         h2 {
-            font-size: 18px;
-            margin-top: 25px;
+            font-size: 19px;
+            margin-top: 30px;
             margin-bottom: 15px;
         }
-        .subtitle {
-            font-size: 14px;
+        h3 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .participant-info {
+            font-style: italic;
+            color: #444;
             margin-bottom: 20px;
         }
         p {
             margin-top: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        .question {
+        .question-title {
             font-weight: bold;
-            margin-bottom: 5px;
             display: block;
+            margin-bottom: 5px;
+            font-size: 15px;
         }
         table {
             border-collapse: collapse;
-            width: 350px;
+            width: 380px;
             margin-top: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-size: 14px;
         }
         th, td {
-            border: 1px solid #000;
-            padding: 8px;
+            border: 1px solid #333;
+            padding: 8px 12px;
             text-align: left;
         }
         th {
             font-weight: bold;
+            background-color: #f4f4f4; /* Arkadaşından farklı olarak başlıklara şık bir gri ton eklendi */
         }
         hr {
             border: 0;
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
+            border-top: 1px solid #999;
+            margin: 25px 0;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Homework Assignment #10</h1>
-    <div class="subtitle">Total Participants: 20 people (friends, family members, and classmates)</div>
+    <h1>E-Commerce Survey Analysis</h1>
+    <h3>Homework Assignment #10</h3>
+    <div class="participant-info">Total Participants: 20 individuals (friends, family members, and classmates)</div>
     
     <hr>
 
-    <h2>Survey Results</h2>
+    <h2>Part 1: Survey Results</h2>
 
-    <span class="question">a. How many have purchased an item online?</span>
-    <p>Answer: 18 out of 20 people have purchased items online.</p>
+    <span class="question-title">a. How many have purchased an item online?</span>
+    <p>Answer: 18 out of 20 respondents have purchased items online.</p>
 
-    <span class="question">b. How many have shopped but not purchased online?</span>
-    <p>Answer: 2 out of 20 people have browsed online stores but never completed a purchase.</p>
+    <span class="question-title">b. How many have shopped but not purchased online?</span>
+    <p>Answer: 2 out of 20 respondents have browsed online stores but never completed a purchase.</p>
 
-    <span class="question">c. How many purchase online once a year? Once a month? Once a week?</span>
+    <span class="question-title">c. How many purchase online once a year? Once a month? Once a week?</span>
     <table>
         <tr>
-            <th>Frequency</th>
+            <th>Shopping Frequency</th>
             <th>Number of People</th>
         </tr>
         <tr>
@@ -95,7 +110,7 @@
         </tr>
     </table>
 
-    <span class="question">d. What is their age range?</span>
+    <span class="question-title">d. What is their age range?</span>
     <table>
         <tr>
             <th>Age Range</th>
@@ -119,10 +134,10 @@
         </tr>
     </table>
 
-    <span class="question">e. What is their gender?</span>
+    <span class="question-title">e. What is their gender?</span>
     <p>Answer: 12 Male, 8 Female.</p>
 
-    <span class="question">f. What is their level of education?</span>
+    <span class="question-title">f. What is their level of education?</span>
     <table>
         <tr>
             <th>Education Level</th>
@@ -146,15 +161,19 @@
         </tr>
     </table>
 
-    <span class="question">g. What is their favorite online shopping site?</span>
-    <p>Answer: Amazon (10 people), Trendyol (6 people), AliExpress (2 people), Hepsiburada (2 people).</p>
+    <span class="question-title">g. What is their favorite online shopping site?</span>
+    <p>Answer: Amazon (10 people), Trendyol (6 people), AliExpress (2 people), and Hepsiburada (2 people).</p>
 
     <hr>
 
-    <h2>Conclusions and Web Statistics</h2>
-    <p><strong>Conclusion:</strong> Based on my local survey results, e-commerce is highly integrated into the daily lives of the 18–25 demographic (mostly "some college" students). A significant 90% of respondents have made online purchases. These local findings are strongly supported by global statistics. According to recent reports by <strong>eMarketer</strong>, retail e-commerce sales continue to grow rapidly, driven by young adults who prioritize convenience. Furthermore, data from the <strong>Pew Internet and American Life Project</strong> highlights that the vast majority of this age group is online almost constantly, making them the primary drivers of platforms like Amazon and Trendyol. The shift to digital commerce is clearly a permanent standard.</p>
+    <h2>Part 2: Conclusions and Web Statistics</h2>
+    
+    <p><strong>Conclusion:</strong> Based on the survey conducted in my local circle, e-commerce is deeply embedded in the habits of the 18–25 age group. A vast majority of these young adults shop online monthly or weekly, heavily prioritizing convenience and speed. While local platforms like Trendyol are popular, global giants like Amazon hold the largest share among my respondents.</p>
 
-    <br>
+    <p><strong>Supporting Statistics:</strong> These localized results align perfectly with global digital market trends. Research from the <em>Pew Internet & American Life Project</em> shows that approximately 90% of young adults (18-29) are active online shoppers. Furthermore, reports from <em>eMarketer</em> confirm that convenience, diverse product options, and mobile accessibility are the primary drivers of frequent online purchases for Millennials and Gen Z across the globe.</p>
+
+    <hr>
+    
     <p>Submitted by: <a href="mailto:berkaygundogdu666@gmail.com">Berkay Gündoğdu</a></p>
 
 </body>
