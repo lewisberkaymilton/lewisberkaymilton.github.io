@@ -3,52 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEU FC - Contact</title>
+    <title>NEU FC | Contact</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1e8449;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h2>NEU <span>FC</span></h2>
-            <ul class="nav-links">
-                <li><a href="football-home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+    <nav class="navbar">
+        <a href="football-home.html" class="logo">⚽ NEU FC</a>
+        <div class="nav-links">
+            <a href="football-home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="training.html">Training</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html" class="active">Contact</a>
         </div>
-    </header>
-
-    <div class="page-banner" style="background-image: url('https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1920');">
-        <h1>Contact Us</h1>
-    </div>
+    </nav>
 
     <div class="container">
-        <h2>Get in Touch</h2>
-        <p>Fill out the form below to request a trial, ask about membership, or get information about NEU FC training sessions and events.</p>
+        <h1>Contact Us</h1>
+        <p>Send a message if you want to join NEU FC or ask a question.</p>
 
         <form id="contactForm">
             <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
             </div>
             <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
             </div>
             <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
     </div>
-
-    <footer>
-        <p>&copy; 2026 NEU FC. Final Project by Berkay Gündoğdu.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
