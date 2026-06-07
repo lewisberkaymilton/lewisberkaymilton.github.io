@@ -16,7 +16,7 @@
                 <li><a href="training.html">Training</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -27,9 +27,9 @@
 
     <div class="container">
         <h2>Get in Touch</h2>
-        <p>Fill out the form below to request a trial or ask questions.</p>
-        
-        <form action="#" method="POST">
+        <p>Fill out the form below to request a trial, ask about membership, or get information about NEU FC training sessions and events.</p>
+
+        <form id="contactForm">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
@@ -40,14 +40,16 @@
             </div>
             <div class="form-group">
                 <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </div>
 
     <footer>
         <p>&copy; 2026 NEU FC. Final Project by Berkay Gündoğdu.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
