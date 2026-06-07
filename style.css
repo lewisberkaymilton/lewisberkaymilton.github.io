@@ -46,57 +46,40 @@ a { color: #8b1a12; }
     text-transform: uppercase;
 }
 
-.era-timeline {
-    padding: 18px 0 8px;
-    overflow-x: auto;
-}
-
-.era-timeline-track {
+.circuit-strip {
     display: flex;
-    justify-content: space-between;
-    min-width: 560px;
-    position: relative;
-    padding: 0 8px 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 0 18px;
 }
 
-.era-timeline-track::before {
-    content: '';
-    position: absolute;
-    left: 8px;
-    right: 8px;
-    top: 18px;
-    height: 2px;
-    background: var(--gold);
+.circuit-strip-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9a9aa8;
+    margin-right: 4px;
+    font-weight: 700;
 }
 
-.era-timeline-point {
-    text-align: center;
+.circuit-strip a {
+    color: #e8e8ec;
     text-decoration: none;
-    color: #ccc;
-    font-size: 0.75rem;
-    position: relative;
-    z-index: 1;
-    min-width: 70px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border: 1px solid #3a3a48;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s;
 }
 
-.era-timeline-point span {
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: var(--dark);
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    margin: 12px auto 6px;
-}
-
-.era-timeline-point:hover,
-.era-timeline-point.active {
-    color: var(--white);
-}
-
-.era-timeline-point.active span {
+.circuit-strip a:hover,
+.circuit-strip a.active {
     background: var(--red);
     border-color: var(--red);
+    color: var(--white);
 }
 
 .main-nav {
