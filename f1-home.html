@@ -3,58 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid & Glory | Home</title>
+    <title>Grid & Glory | Formula 1 Overview</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="f1-home.html" class="logo">Grid & Glory</a>
-        <div class="nav-links">
-            <a href="f1-home.html" class="active">Home</a>
-            <a href="history.html">History</a>
-            <a href="drivers.html">Drivers</a>
-            <a href="circuits.html">Circuits</a>
-            <a href="teams.html">Teams</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+        <div class="brand">
+            <h1>Grid & Glory</h1>
+            <p>Final Project · Berkay Gündoğdu · Formula 1</p>
         </div>
+        <nav class="era-timeline" aria-label="F1 history timeline">
+            <div class="era-timeline-track">
+                <a class="era-timeline-point" href="history.html#era-1950"><span></span>1950s</a>
+                <a class="era-timeline-point" href="history.html#era-1980"><span></span>1980s</a>
+                <a class="era-timeline-point" href="history.html#era-2000"><span></span>2000s</a>
+                <a class="era-timeline-point" href="history.html#era-2010"><span></span>2010s</a>
+                <a class="era-timeline-point active" href="history.html#era-2020"><span></span>2020s</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="main-nav">
+        <a href="f1-home.html" class="active">Overview</a>
+        <a href="history.html">History</a>
+        <div class="nav-dropdown">
+            <span class="nav-trigger">Drivers</span>
+            <div class="nav-dropdown-menu">
+                <div class="nav-dropdown-label">Popular Drivers</div>
+                <a href="driver-verstappen.html">Max Verstappen</a>
+                <a href="driver-hamilton.html">Lewis Hamilton</a>
+                <a href="driver-senna.html">Ayrton Senna</a>
+                <a href="driver-schumacher.html">Michael Schumacher</a>
+                <a href="driver-alonso.html">Fernando Alonso</a>
+                <a href="driver-leclerc.html">Charles Leclerc</a>
+                <a class="nav-dropdown-footer" href="drivers.html">View all drivers →</a>
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <span class="nav-trigger">Circuits</span>
+            <div class="nav-dropdown-menu">
+                <div class="nav-dropdown-label">Iconic Circuits</div>
+                <a href="circuit-monza.html">Monza</a>
+                <a href="circuit-monaco.html">Monaco</a>
+                <a href="circuit-silverstone.html">Silverstone</a>
+                <a href="circuit-spa.html">Spa-Francorchamps</a>
+                <a href="circuit-suzuka.html">Suzuka</a>
+                <a href="circuit-interlagos.html">Interlagos</a>
+                <a class="nav-dropdown-footer" href="circuits.html">View all circuits →</a>
+            </div>
+        </div>
+        <a href="teams.html">Teams</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <section class="hero">
-        <h1>Formula 1 — Speed, Strategy, Pressure</h1>
-        <p>A small fan site about the sport I watch every race weekend.</p>
-    </section>
+    <main class="page-wrap">
+        <article class="panel hero-panel">
+            <h1>A Journey Through Formula 1</h1>
+            <p>Formula 1 is the highest class of international racing. Ten teams, twenty drivers, and 24 race weekends per season. This site covers the history of the sport, six legendary drivers, six famous circuits, and the full current grid.</p>
+            <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Formula 1 car on a race track">
+        </article>
 
-    <main class="container">
         <article class="panel">
-            <h1>Why I Follow F1</h1>
-            <p>I did not grow up around race tracks. I started watching Formula 1 because a friend kept talking about qualifying and tyre strategy. After a few races, I was hooked — the starts are chaos, the pit stops are timed to the second, and one small mistake can ruin a whole weekend.</p>
-            <p>This project is my final homework site. It is not an official F1 page — just my notes on the history, drivers, tracks, and teams that make the sport interesting.</p>
+            <h2>What Is Formula 1?</h2>
+            <p>F1 cars are open-wheel, single-seat machines built to strict technical rules. Each team designs its own chassis and works with a power-unit supplier (Mercedes, Ferrari, Renault, or Honda RBPT). Races are held on permanent tracks and street circuits across five continents.</p>
+            <p>A race weekend has three practice sessions, qualifying, and a Sunday grand prix. Points are awarded to the top ten finishers. The driver and constructor with the most points at the end of the season win the world championships.</p>
+        </article>
 
-            <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=900" alt="Formula 1 car on track">
-
-            <h2>What Makes F1 Different</h2>
-            <p>It is not only about who has the fastest car. Teams spend millions on aerodynamics, engineers study data lap by lap, and drivers have to stay focused for two hours in crazy heat. That mix of machine and human skill is what keeps me watching.</p>
-
+        <article class="panel">
+            <h2>Explore This Site</h2>
+            <p>Hover over <strong>Drivers</strong> or <strong>Circuits</strong> in the menu to open a list — each name has its own profile page with stats and photos. The <strong>Teams</strong> page lists all ten constructors on the current grid.</p>
             <div class="card-grid">
-                <div class="card">
-                    <h3>Race Weekend</h3>
-                    <p>Practice, qualifying, then the race. Each session matters.</p>
+                <div class="profile-card">
+                    <img src="https://images.pexels.com/photos/3802507/pexels-photo-3802507.jpeg?auto=compress&cs=tinysrgb&w=600" alt="F1 driver in helmet">
+                    <div class="card-body">
+                        <h3>Drivers</h3>
+                        <p>Verstappen, Hamilton, Senna, Schumacher, Alonso, Leclerc.</p>
+                        <a href="drivers.html">Browse drivers →</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Tyres & Fuel</h3>
-                    <p>Strategy calls can win or lose positions before the chequered flag.</p>
+                <div class="profile-card">
+                    <img src="https://images.pexels.com/photos/159239/pexels-photo-159239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Race track">
+                    <div class="card-body">
+                        <h3>Circuits</h3>
+                        <p>Monza, Monaco, Silverstone, Spa, Suzuka, Interlagos.</p>
+                        <a href="circuits.html">Browse circuits →</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Team Radio</h3>
-                    <p>You hear real pressure — engineers, drivers, and no second chances.</p>
+                <div class="profile-card">
+                    <img src="https://images.pexels.com/photos/2116473/pexels-photo-2116473.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Racing team garage">
+                    <div class="card-body">
+                        <h3>Teams</h3>
+                        <p>Full 2025 grid — all ten teams and twenty drivers.</p>
+                        <a href="teams.html">View the grid →</a>
+                    </div>
                 </div>
             </div>
-
-            <p class="note">Final project by Berkay Gündoğdu · Near East University · Software Engineering coursework.</p>
         </article>
     </main>
 
-    <footer class="site-footer">&copy; 2026 Grid & Glory — student project</footer>
+    <footer class="site-footer">Final Project · Near East University · 2026</footer>
     <script src="script.js"></script>
 </body>
 </html>

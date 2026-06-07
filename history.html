@@ -3,60 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid & Glory | History</title>
+    <title>Grid & Glory | F1 History</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="f1-home.html" class="logo">Grid & Glory</a>
-        <div class="nav-links">
-            <a href="f1-home.html">Home</a>
-            <a href="history.html" class="active">History</a>
-            <a href="drivers.html">Drivers</a>
-            <a href="circuits.html">Circuits</a>
-            <a href="teams.html">Teams</a>
-            <a href="contact.html">Contact</a>
-        </div>
+    <header class="site-header">
+        <div class="brand"><h1>Grid & Glory</h1><p>Final Project · Berkay Gündoğdu · Formula 1</p></div>
+        <nav class="era-timeline"><div class="era-timeline-track">
+            <a class="era-timeline-point" href="#era-1950"><span></span>1950s</a>
+            <a class="era-timeline-point" href="#era-1980"><span></span>1980s</a>
+            <a class="era-timeline-point" href="#era-2000"><span></span>2000s</a>
+            <a class="era-timeline-point" href="#era-2010"><span></span>2010s</a>
+            <a class="era-timeline-point" href="#era-2020"><span></span>2020s</a>
+        </div></nav>
+    </header>
+    <nav class="main-nav">
+        <a href="f1-home.html">Overview</a>
+        <a href="history.html" class="active">History</a>
+        <div class="nav-dropdown"><span class="nav-trigger">Drivers</span><div class="nav-dropdown-menu">
+            <div class="nav-dropdown-label">Popular Drivers</div>
+            <a href="driver-verstappen.html">Max Verstappen</a><a href="driver-hamilton.html">Lewis Hamilton</a>
+            <a href="driver-senna.html">Ayrton Senna</a><a href="driver-schumacher.html">Michael Schumacher</a>
+            <a href="driver-alonso.html">Fernando Alonso</a><a href="driver-leclerc.html">Charles Leclerc</a>
+            <a class="nav-dropdown-footer" href="drivers.html">View all drivers →</a>
+        </div></div>
+        <div class="nav-dropdown"><span class="nav-trigger">Circuits</span><div class="nav-dropdown-menu">
+            <div class="nav-dropdown-label">Iconic Circuits</div>
+            <a href="circuit-monza.html">Monza</a><a href="circuit-monaco.html">Monaco</a>
+            <a href="circuit-silverstone.html">Silverstone</a><a href="circuit-spa.html">Spa-Francorchamps</a>
+            <a href="circuit-suzuka.html">Suzuka</a><a href="circuit-interlagos.html">Interlagos</a>
+            <a class="nav-dropdown-footer" href="circuits.html">View all circuits →</a>
+        </div></div>
+        <a href="teams.html">Teams</a><a href="contact.html">Contact</a>
     </nav>
 
-    <section class="hero">
-        <h1>How F1 Started</h1>
-        <p>From post-war grand prix racing to today's global championship.</p>
-    </section>
+    <main class="page-wrap">
+        <article class="panel hero-panel">
+            <h1>History of Formula 1</h1>
+            <p>The FIA Formula One World Championship began in 1950 at Silverstone, UK. Over seven decades the sport grew from a European series into a global championship with advanced technology and strict safety standards.</p>
+            <img src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Classic racing car on track">
+        </article>
 
-    <main class="container">
-        <article class="panel">
-            <h1>A Short History</h1>
-            <p>Modern Formula 1 began in 1950 with the first World Championship race at Silverstone. Back then, safety rules were basic and cars were nowhere near as fast or complex as today. Drivers accepted risks that would be unthinkable now.</p>
-
-            <img src="https://images.unsplash.com/photo-1541443138284-0eb5de10c161?w=900" alt="Racing car on a track">
-
-            <h2>Key Eras</h2>
-            <ul class="timeline">
-                <li>
-                    <strong>1950s–60s — The pioneers</strong>
-                    Names like Fangio and Clark built the legend. Constructors like Ferrari and Lotus showed that engineering mattered as much as driving talent.
-                </li>
-                <li>
-                    <strong>1970s–80s — Ground effect & turbo</strong>
-                    Cars got faster and more dangerous. Safety slowly improved after tragedies that forced the sport to change.
-                </li>
-                <li>
-                    <strong>1990s–2000s — Schumacher era</strong>
-                    Ferrari dominated with Michael Schumacher. TV coverage grew and F1 became a truly international product.
-                </li>
-                <li>
-                    <strong>2010s–today — Hybrid power units</strong>
-            Teams use hybrid engines, huge budgets, and wind tunnels. Hamilton, Verstappen, and Red Bull defined the latest chapter of the sport.
-                </li>
-            </ul>
-
-            <h2>Why History Matters</h2>
-            <p>When you watch a modern race, you are seeing decades of rule changes stacked on top of each other. Tyre blankets, DRS, budget caps — all of it comes from problems the sport faced in the past. Understanding that makes race weekends easier to follow.</p>
+        <article class="panel" id="era-1950">
+            <h2>1950s — The Championship Begins</h2>
+            <p>Giuseppe Farina won the first title in 1950 driving for Alfa Romeo. Juan Manuel Fangio dominated the decade with five championships. Cars had front engines, narrow tyres, and almost no safety equipment by modern standards.</p>
+        </article>
+        <article class="panel" id="era-1980">
+            <h2>1980s — Turbo Era</h2>
+            <p>Turbocharged engines produced extreme power. Ayrton Senna and Alain Prost fought legendary battles at McLaren. Ground-effect aerodynamics made cars faster but more dangerous until rules changed.</p>
+        </article>
+        <article class="panel" id="era-2000">
+            <h2>2000s — Schumacher & Ferrari</h2>
+            <p>Michael Schumacher won five consecutive titles with Ferrari (2000–2004). The era also saw improved TV coverage, more Asian races, and the rise of teams like Renault and McLaren as title contenders.</p>
+        </article>
+        <article class="panel" id="era-2010">
+            <h2>2010s — Hybrid Revolution</h2>
+            <p>1.6-litre V6 turbo hybrid power units replaced V8 engines in 2014. Mercedes won eight consecutive constructors' titles. Lewis Hamilton matched Schumacher's seven championships.</p>
+        </article>
+        <article class="panel" id="era-2020">
+            <h2>2020s — New Rules & Red Bull</h2>
+            <p>Ground-effect cars returned in 2022. Max Verstappen and Red Bull dominated multiple seasons. A cost cap now limits team spending, and the 2026 rules will change power units again.</p>
+            <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Modern Formula 1 car">
         </article>
     </main>
-
-    <footer class="site-footer">&copy; 2026 Grid & Glory — student project</footer>
+    <footer class="site-footer">Final Project · Near East University · 2026</footer>
     <script src="script.js"></script>
 </body>
 </html>
