@@ -370,19 +370,59 @@ def build_home():
     cards = """
         <article class="panel hero-panel">
             <h1>2026 Formula 1 Season</h1>
-            <p>The 2026 championship is the biggest rules reset in a generation. New 1.6-litre hybrid power units, active aerodynamics, and an 11-team grid — including Cadillac's debut — fight across 24 rounds on six continents.</p>
-            <p>This site covers five star drivers, six iconic circuits, and every team on the entry list with photos, stats, and detailed profiles for a school final project on Formula 1.</p>
+            <p>Welcome to <strong>Grid &amp; Glory</strong> — a guide to the world's fastest motorsport. Whether you already follow every race or you are completely new to F1, this page explains the basics before you explore drivers, tracks, and teams.</p>
             <img src="images/img-hero-2026.jpg" alt="Modern Formula 1 cars on track">
         </article>
+
+        <article class="panel">
+            <h2>What Is Formula 1?</h2>
+            <p>Formula 1 — often called <strong>F1</strong> — is the highest level of single-seater racing in the world. "Formula" means the cars must follow strict rules (a formula). "One" means it is the top category — faster and more advanced than Formula 2, Formula 3, or any other series.</p>
+            <p>Think of it like the Champions League of car racing. The best drivers, the best engineers, and the biggest manufacturers compete on famous tracks across the globe — from Monaco's city streets to Monza's long straights in Italy.</p>
+            <p>Each car is built for speed: open wheels (tyres outside the body), a single seat, wings front and rear for downforce, and a hybrid engine that combines petrol power with electric motors. In 2026, cars can reach over 300 km/h on the straights.</p>
+        </article>
+
+        <article class="panel">
+            <h2>How Does a Race Weekend Work?</h2>
+            <p>A Formula 1 event is called a <strong>Grand Prix</strong> (French for "big prize"). Most weekends follow the same pattern:</p>
+            <ul>
+                <li><strong>Practice (Friday &amp; Saturday)</strong> — Drivers learn the track and teams test setup changes. Nothing counts for points.</li>
+                <li><strong>Qualifying (Saturday)</strong> — Drivers push for the fastest lap time. The quickest driver starts from <strong>pole position</strong> (first on the grid). Slower drivers start further back.</li>
+                <li><strong>Race (Sunday)</strong> — All drivers start together in a grid formation. The first to complete the set number of laps wins. Points are awarded to the top finishers.</li>
+            </ul>
+            <p>Some weekends also include a <strong>Sprint</strong> — a shorter race on Saturday that awards extra points, before the main race on Sunday.</p>
+        </article>
+
+        <article class="panel">
+            <h2>How Does the Championship Work?</h2>
+            <p>There are two titles fought over every season:</p>
+            <ul>
+                <li><strong>Drivers' Championship</strong> — Points from every race are added up for each driver. The driver with the most points at the end of the season becomes <strong>World Champion</strong>. In 2026, Lando Norris defends the title he won in 2025.</li>
+                <li><strong>Constructors' Championship</strong> — Each team runs two cars. Both drivers' points count toward the team total. The team with the most combined points wins. McLaren, Ferrari, and Red Bull usually fight for this.</li>
+            </ul>
+            <p>Points are given to the top ten finishers in each race — from 25 points for first place down to 1 point for tenth. This means consistency matters: you do not have to win every race to win the title, but you cannot afford many bad weekends either.</p>
+        </article>
+
+        <article class="panel">
+            <h2>Key Words Explained</h2>
+            <ul>
+                <li><strong>Pit stop</strong> — The car stops in the pit lane to change tyres or repair damage. A fast pit stop takes under three seconds.</li>
+                <li><strong>DRS / Active aero</strong> — Systems that reduce drag on straights to help overtaking. In 2026, active aerodynamics replace much of the old DRS system.</li>
+                <li><strong>Safety Car</strong> — A pace car that leads the field at reduced speed after a crash, so marshals can clear the track safely.</li>
+                <li><strong>Team / Constructor</strong> — The company that builds the car — Ferrari, McLaren, Mercedes, Red Bull, and so on. Each team enters two drivers.</li>
+                <li><strong>Power unit</strong> — The engine plus hybrid electric systems. In 2026, suppliers include Mercedes, Ferrari, Red Bull Ford, Honda, and Audi.</li>
+            </ul>
+        </article>
+
         <article class="panel">
             <h2>What's New in 2026</h2>
-            <p>Power units now split power roughly 50/50 between the internal combustion engine and electric motors. Active front and rear wings adjust automatically to reduce drag on straights and increase downforce in corners.</p>
-            <p>Cadillac joins as the first new American team in decades. Audi replaces Sauber as a factory entry, and Red Bull runs its own Ford-branded power unit. The cost cap remains, but development freedom in the new rules has shaken up the competitive order.</p>
+            <p>The 2026 season brings the biggest rule change in years. New hybrid engines split power roughly 50/50 between petrol and electric. Active front and rear wings adjust automatically in corners and on straights.</p>
+            <p>Cadillac joins as the first new American team in decades. Audi replaces Sauber as a factory entry. The grid grows to <strong>11 teams and 22 drivers</strong>, racing across <strong>24 rounds</strong> on six continents.</p>
         </article>
+
         <article class="panel">
             <h2>How To Use This Site</h2>
-            <p>Use the <strong>Featured Circuits</strong> bar in the header to jump to Monaco, Monza, Spa, and other legendary tracks. Each circuit page includes lap data, history, and a real track photo.</p>
-            <p>Open the <strong>Drivers</strong> menu for full biographies of Verstappen, Hamilton, Leclerc, Norris, and Russell. The <strong>Teams</strong> page shows all 11 constructors with car photos and the complete 2026 entry list.</p>
+            <p>Use the <strong>Featured Circuits</strong> bar at the top to explore Monaco, Monza, Spa, and other legendary tracks. Open the <strong>Drivers</strong> menu for full biographies of Verstappen, Hamilton, Leclerc, Norris, and Russell.</p>
+            <p>The <strong>Teams</strong> page shows every constructor with car photos and the full 2026 entry list. The <strong>History</strong> page covers more than 75 years of the sport, from the 1950 championship to today.</p>
         </article>
         <article class="panel">
             <h2>Also On This Site</h2>
