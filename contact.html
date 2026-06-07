@@ -3,72 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEU FC | Contact</title>
+    <title>Grid & Glory | Contact</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #1e8449;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        button:hover {
-            background-color: #27ae60;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="football-home.html" class="logo">⚽ NEU FC</a>
+        <a href="f1-home.html" class="logo">Grid & Glory</a>
         <div class="nav-links">
-            <a href="football-home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="training.html">Training</a>
-            <a href="facilities.html">Facilities</a>
-            <a href="pricing.html">Pricing</a>
+            <a href="f1-home.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="circuits.html">Circuits</a>
+            <a href="teams.html">Teams</a>
             <a href="contact.html" class="active">Contact</a>
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>Send a message if you want to join NEU FC or ask a question.</p>
+    <section class="hero">
+        <h1>Get In Touch</h1>
+        <p>Questions about this project or your own favourite driver — send a message.</p>
+    </section>
 
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+    <main class="container">
+        <article class="panel">
+            <h1>Contact</h1>
+            <p>This form is part of the homework (JavaScript demo). Nothing is sent to a real server — you get a confirmation alert and the fields clear.</p>
 
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required placeholder="Who should have won last season?"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </article>
+    </main>
+
+    <footer class="site-footer">&copy; 2026 Grid & Glory — student project</footer>
     <script src="script.js"></script>
 </body>
 </html>

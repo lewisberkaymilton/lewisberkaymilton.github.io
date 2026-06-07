@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const contactForm = document.getElementById('contactForm');
+    const form = document.getElementById('contactForm');
+    if (!form) return;
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('Thank you! Your message has been received.');
-            contactForm.reset();
-        });
-    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thanks! Your message was sent.');
+        form.reset();
+    });
 });
