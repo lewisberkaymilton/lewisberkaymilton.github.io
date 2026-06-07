@@ -270,7 +270,7 @@ def build_home():
         <article class="panel hero-panel">
             <h1>2026 Formula 1 Season</h1>
             <p>The 2026 championship brings new power units, Cadillac on the grid, and 11 teams fighting across 24 rounds. This site covers six iconic circuits, five star drivers, and the full 2026 entry list.</p>
-            <img src="images/img-f1-race.jpg" alt="Formula 1 cars on the starting grid">
+            <img src="images/img-hero-2026.jpg" alt="Modern Formula 1 cars on track">
         </article>
         <article class="panel">
             <h2>How To Use This Site</h2>
@@ -319,7 +319,7 @@ def build_drivers_index():
     ]
     for href, img, name, sub in driver_cards:
         cards.append(f"""            <div class="profile-card">
-                <img src="images/{img}" alt="{name}">
+                <img src="images/{img}" alt="{name}" class="card-photo">
                 <div class="card-body"><h3>{name}</h3><p>{sub}</p><a href="{href}">Read profile →</a></div>
             </div>""")
     body = f"""    <main class="page-wrap">
@@ -405,7 +405,7 @@ def build_history():
         <article class="panel hero-panel">
             <h1>History of Formula 1</h1>
             <p>The FIA Formula One World Championship began in 1950 at Silverstone, UK. In 2026 the sport enters a new rules cycle — but the story below spans more than seven decades of racing.</p>
-            <img src="images/img-f1-race.jpg" alt="Classic Formula 1 race start in wet conditions">
+            <img src="images/img-hero-2026.jpg" alt="Modern McLaren Formula 1 car">
         </article>
         <article class="panel" id="era-1950">
             <h2>1950s — The Championship Begins</h2>
@@ -465,7 +465,7 @@ def build_circuit_page(filename, data):
         <article class="panel">
             <h1>{data["name"]}</h1>
             <p><strong>Country:</strong> {data["country"]} &nbsp;|&nbsp; {data["meta"]}</p>
-            <img class="profile-img" src="images/{data["img"]}" alt="{data["alt"]}">
+            <img class="profile-img circuit-photo" src="images/{data["img"]}" alt="{data["alt"]}">
             <div class="stats-grid">
 {stats}            </div>
             <h2>About This Track</h2>
@@ -490,7 +490,7 @@ def build_driver_page(filename, data):
         <article class="panel">
             <h1>{data["name"]}</h1>
             <p><strong>{data["meta"]}</strong></p>
-            <img class="profile-img" src="images/{data["img"]}" alt="{data["alt"]}">
+            <img class="profile-img driver-photo" src="images/{data["img"]}" alt="{data["alt"]}">
             <div class="stats-grid">
 {stats}            </div>
             <h2>Career</h2>
