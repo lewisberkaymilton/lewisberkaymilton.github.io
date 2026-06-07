@@ -284,6 +284,11 @@ a { color: #8b1a12; }
     text-decoration: none;
 }
 
+.profile-card .muted {
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
 .timeline-list {
     list-style: none;
     padding: 0;
