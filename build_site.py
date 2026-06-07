@@ -411,7 +411,7 @@ def build_home():
         <article class="panel hero-panel">
             <h1>2026 Formula 1 Season</h1>
             <p>Welcome to <strong>Grid &amp; Glory</strong> — a guide to the world's fastest motorsport. Whether you already follow every race or you are completely new to F1, this page explains the basics before you explore drivers, tracks, and teams.</p>
-            <img src="images/img-hero-2026.jpg" alt="Modern Formula 1 cars on track">
+            <img src="images/img-team-ferrari.jpg" alt="Scuderia Ferrari Formula 1 car">
         </article>
 
         <article class="panel">
@@ -601,7 +601,7 @@ def build_history():
             <h1>History of Formula 1</h1>
             <p>The FIA Formula One World Championship began in 1950 at Silverstone, UK. Seventy-six years later, the sport reaches 2026 with new technology, a wider grid, and global audiences in the hundreds of millions.</p>
             <p>The timeline below covers the major eras — from front-engined pioneers to hybrid champions and the regulation reset of today.</p>
-            <img src="images/img-hero-2026.jpg" alt="Modern McLaren Formula 1 car">
+            <img src="images/img-circuit-silverstone.jpg" alt="Silverstone Circuit — venue of the first F1 world championship race in 1950">
         </article>
         <article class="panel" id="era-1950">
             <h2>1950s — The Championship Begins</h2>
@@ -627,7 +627,7 @@ def build_history():
             <h2>2020s — Verstappen, Norris & New Rules</h2>
             <p>Ground-effect cars returned in 2022, producing closer racing. Max Verstappen dominated early in the decade before McLaren's rise brought Lando Norris a world title. A cost cap now limits team spending.</p>
             <p>2026 introduces new power units, active aero, and an 11-team grid including Cadillac. Hamilton drives for Ferrari, Audi replaces Sauber, and the sport enters its next chapter.</p>
-            <img src="images/img-team-mclaren.jpg" alt="McLaren Formula 1 car from the 2020s era">
+            <img src="images/img-team-audi.jpg" alt="Audi Formula 1 car — new factory team for the 2026 regulation era">
         </article>
     </main>"""
     write("history.html", page_shell("Grid & Glory | F1 History", body, "history.html"))
